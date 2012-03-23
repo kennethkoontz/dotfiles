@@ -6,7 +6,16 @@ call pathogen#helptags()
 set backspace=indent,eol,start " make backspace work.
 
 " python files
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 nowrap
+
+" javascript files
+au FileType javascript setlocal ts=4 sts=4 et sw=4 textwidth=79
+
+" jade files
+au FileType jade setlocal sw=2 ts=2 sts=2 textwidth=0
+
+" css files
+au FileType css setlocal sw=2 ts=2 sts=2 textwidth=79
 
 " indentation.
 set autoindent
