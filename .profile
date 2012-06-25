@@ -33,3 +33,4 @@ alias gh='git hist'
 
 alias got='git '
 alias get='git '
+alias update='sudo apt-get update && sudo apt-get upgrade'
