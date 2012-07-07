@@ -15,7 +15,7 @@ au FileType javascript setlocal ts=4 sts=4 et sw=4 textwidth=79
 au FileType jade setlocal sw=2 ts=2 sts=2 textwidth=0
 
 " html files
-au FileType html setlocal sw=2 ts=2 sts=2
+au FileType html setlocal sw=2 ts=2 sts=2 textwidth=0
 
 " css files
 au FileType css setlocal sw=2 ts=2 sts=2 textwidth=79
@@ -34,7 +34,8 @@ set background=dark " background to dark.
 colorscheme solarized " solarized colorscheme
 
 " change to current directory.
-set autochdir
+"set autochdir
+autocmd BufEnter * silent! lcd %:p:h
 
 " show status line.
 set laststatus=2

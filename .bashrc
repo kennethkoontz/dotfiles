@@ -102,6 +102,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+PATH=$PATH:$HOME/opt/android-sdk-linux/platform-tools
+
+
 # Allow terminal with 256 color support.
 export TERM="xterm-256color"
 
@@ -109,3 +112,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
