@@ -57,3 +57,9 @@ nmap <F4> :w<CR>:make<CR>:cw<CR>
 " keybindings for folds
 map <buffer> f za 
 map <buffer> F :call ToggleFold()<CR> 
+
+" Curly Brace magic
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
