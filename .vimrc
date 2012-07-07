@@ -60,7 +60,11 @@ map <buffer> f za
 map <buffer> F :call ToggleFold()<CR> 
 
 " Curly Brace magic
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
+au FileType javascript inoremap {      {}<Left>
+au FileType javascript inoremap {<CR>  {<CR>}<Esc>O
+au FileType javascript inoremap {{     {
+au FileType javascript inoremap {}     {}
+
+" Parenthesis magic
+au FileType python inoremap (      ()<Left>
+au FileType python inoremap )      <Right><Space>
