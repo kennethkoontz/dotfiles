@@ -1,6 +1,17 @@
 #! /bin/bash
 
-ln -sf /home/kenneth/.dotfiles/.gitconfig /home/kenneth/.gitconfig
-ln -sf /home/kenneth/.dotfiles/.vimrc /home/kenneth/.vimrc
-ln -sf /home/kenneth/.dotfiles/.bashrc /home/kenneth/.bashrc
-ln -sf /home/kenneth/.dotfiles/.profile /home/kenneth/.profile
+if ln -sf $PWD/.gitconfig $HOME/.gitconfig ; then
+	echo created symlink: $PWD/.gitconfig $HOME/.gitconfig
+fi
+
+if ln -sf $PWD/.vimrc $HOME/.vimrc ; then
+	echo created symlink: $PWD/.vimrc $HOME/.vimrc
+fi
+
+if ln -sf $PWD/.profile $HOME/.profile ; then
+	echo created symlink: $PWD/.profile $HOME/.profile
+fi
+
+if ln -sf $PWD/.bashrc $HOME/.bashrc; then
+	echo created symlink: $PWD/.bashrc $HOME/.bashrc
+fi
