@@ -14,6 +14,9 @@ au FileType javascript setlocal ts=4 sts=4 et sw=4 textwidth=79
 " jade files
 au FileType jade setlocal sw=2 ts=2 sts=2 textwidth=0
 
+" xml files
+au FileType xml setlocal sw=2 ts=2 sts=2 textwidth=0
+
 " html files
 au FileType html setlocal sw=2 ts=2 sts=2 textwidth=0
 
@@ -64,7 +67,3 @@ au FileType javascript inoremap {      {}<Left>
 au FileType javascript inoremap {<CR>  {<CR>}<Esc>O
 au FileType javascript inoremap {{     {
 au FileType javascript inoremap {}     {}
-
-" Parenthesis magic
-au FileType python inoremap (      ()<Left>
-au FileType python inoremap )      <Right><Space>
