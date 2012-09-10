@@ -9,7 +9,7 @@ set backspace=indent,eol,start " make backspace work.
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 nowrap
 
 " javascript files
-au FileType javascript setlocal ts=4 sts=4 et sw=4 textwidth=79
+au FileType javascript setlocal ts=2 sts=2 et sw=4 textwidth=79
 
 " jade files
 au FileType jade setlocal sw=2 ts=2 sts=2 textwidth=0
@@ -61,9 +61,3 @@ nmap <F4> :w<CR>:make<CR>:cw<CR>
 " keybindings for folds
 map <buffer> f za 
 map <buffer> F :call ToggleFold()<CR> 
-
-" Curly Brace magic
-au FileType javascript inoremap {      {}<Left>
-au FileType javascript inoremap {<CR>  {<CR>}<Esc>O
-au FileType javascript inoremap {{     {
-au FileType javascript inoremap {}     {}
