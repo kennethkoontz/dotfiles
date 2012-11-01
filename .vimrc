@@ -61,3 +61,8 @@ nmap <F4> :w<CR>:make<CR>:cw<CR>
 " keybindings for folds
 map <buffer> f za 
 map <buffer> F :call ToggleFold()<CR> 
+
+" set folds
+set foldmethod=syntax
+
+let javaScript_fold=1         " JavaScript
