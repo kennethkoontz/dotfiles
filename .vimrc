@@ -32,7 +32,8 @@ filetype on " try to detect filetypes.
 filetype plugin indent on " enable loading indent file for filetype.
 
 " for solarized colorscheme.
-let g:solarized_termcolors=256 " allow 256 colors.
+" let g:solarized_termcolors=256 allow 256 colors. NOTE: FOR SOME REASON THIS
+" WAS NOT WORKING
 set background=dark " background to dark.
 colorscheme solarized " solarized colorscheme
 
