@@ -10,7 +10,7 @@ set backspace=indent,eol,start " make backspace work.
 
 " Filetype settings
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 nowrap " python
-au FileType javascript setlocal ts=4 sts=4 et sw=4 " javascript
+au FileType javascript setlocal ts=2 sts=2 et sw=2 " javascript
 au FileType sh setlocal shiftwidth=4 softtabstop=4 " bash 
 au FileType jade setlocal sw=2 ts=2 sts=2 textwidth=0 " jade 
 au FileType xml setlocal sw=2 ts=2 sts=2 textwidth=0 " xml 
@@ -30,7 +30,8 @@ set background=dark " background to dark.
 colorscheme solarized " solarized colorscheme
 
 " change to current directory.
-autocmd BufEnter * silent! lcd %:p:h
+" commented this out to work with fuffinder
+" autocmd BufEnter * silent! lcd %:p:h
 
 " show status line.
 set laststatus=2
@@ -41,6 +42,7 @@ let g:SimpylFold_docstring_preview = 1
 
 " keybindings.
 map <leader>n :NERDTreeToggle<CR>
+map <leader>f :FufCoverageFile<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 map <c-j> <c-w>j
@@ -61,7 +63,7 @@ set foldmethod=syntax
 let javaScript_fold=1         " JavaScript
 
 " run jshint on saving js file
-autocmd BufWritePost,FileWritePost *.js :JSHint <afile>
+" autocmd BufWritePost,FileWritePost *.js :JSHint <afile>
 
 " highlight searching 
 set hlsearch
