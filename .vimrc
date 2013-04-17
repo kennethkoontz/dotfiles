@@ -1,84 +1,32 @@
-" vim settings
+set nocompatible
+filetype off
 
-" pathogen setup
-filetype off " turn off for pathogen.
-call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-set backspace=indent,eol,start " make backspace work.
+Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'pangloss/vim-javascript'
+Bundle 'AutoClose'
+Bundle 'git://git.wincent.com/command-t.git'
 
-" Filetype settings
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 nowrap " python
-au FileType javascript setlocal ts=2 sts=2 et sw=2 " javascript
-au FileType sh setlocal shiftwidth=4 softtabstop=4 " bash 
-au FileType jade setlocal sw=2 ts=2 sts=2 textwidth=0 " jade 
-au FileType xml setlocal sw=2 ts=2 sts=2 textwidth=0 " xml 
-au FileType html setlocal sw=2 ts=2 sts=2 textwidth=0 " html 
-au FileType css setlocal sw=2 ts=2 sts=2 textwidth=79 " css 
+autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
-set autoindent " indentation.
-
-set nu " line numbers on.
-syntax on " colored syntax on.
-filetype on " try to detect filetypes.
-filetype plugin indent on " enable loading indent file for filetype.
-
-" for solarized colorscheme.
-" let g:solarized_termcolors=256
-set background=dark " background to dark.
-colorscheme solarized " solarized colorscheme
-
-" change to current directory.
-" commented this out to work with fuffinder
-" autocmd BufEnter * silent! lcd %:p:h
-
-" show status line.
-set laststatus=2
-set statusline=%F%r%h%w\ %y\ [%L\ lines]\ %m
-
-" SimpylFold preview folding.
-let g:SimpylFold_docstring_preview = 1
-
-" keybindings.
-map <leader>n :NERDTreeToggle<CR>
-map <leader>f :FufCoverageFile<CR>
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-nmap <F4> :w<CR>:make<CR>:cw<CR>
-" remap esc key to ii
-imap ii <Esc> 
 
-" keybindings for folds
-map <buffer> f za 
-map <buffer> F :call ToggleFold()<CR> 
-
-" set folds
-set foldmethod=syntax
-
-let javaScript_fold=1         " JavaScript
-
-" run jshint on saving js file
-" autocmd BufWritePost,FileWritePost *.js :JSHint <afile>
-
-" highlight searching 
-set hlsearch
-map <leader>c :nohlsearch<CR>
-
-" relative numbering.
 set relativenumber
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
-function! NumberToggle()
-	if(&relativenumber == 1)
-		set number
-	else
-		set relativenumber
-	endif
-endfunc
 
-nnoremap <c-n> :call NumberToggle()<cr>
+set laststatus=2
+set statusline=%F%r%h%w\ %y\ [%L\ lines]\ %m
+
+set foldmethod=syntax
+let javaScript_fold=1
+
+syntax enable
+set background=dark
+colorscheme solarized
