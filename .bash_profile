@@ -4,6 +4,7 @@ PATH=$PATH\:$HOME/opt/mongodb-osx-x86_64-2.2.0/bin
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/platform-tools
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/tools
 PATH=$PATH\:$HOME/bin
+PATH=$PATH\:$HOME/Library/Trigger\ Toolkit
 
 # XXX Not sure what this is used for
 CLICOLOR=1
