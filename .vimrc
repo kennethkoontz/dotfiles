@@ -21,6 +21,8 @@ set relativenumber
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 
+set smartindent
+
 set laststatus=2
 set statusline=%F%r%h%w\ %y\ [%L\ lines]\ %m
 
