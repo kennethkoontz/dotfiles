@@ -9,6 +9,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
+Bundle 'tpope/vim-fugitive'
+Bundle 'digitaltoad/vim-jade'
 Bundle 'AutoClose'
 Bundle 'git://git.wincent.com/command-t.git'
 
@@ -18,15 +20,17 @@ if has('gui_running')
 	set guifont=Ubuntu\ Mono\ for\ Powerline:h16
 endif
 
+set incsearch
+
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd Filetype jade setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 map <Leader>n :NERDTreeToggle<CR>
-
 
 set relativenumber
 autocmd InsertEnter * :set number
