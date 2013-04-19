@@ -5,9 +5,12 @@ PATH=$PATH\:$HOME/opt/android-sdk-macosx/platform-tools
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/tools
 PATH=$PATH\:$HOME/bin
 PATH=$PATH\:$HOME/Library/Trigger\ Toolkit
+PATH=$PATH\:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # XXX Not sure what this is used for
 CLICOLOR=1
+
+export ARCHFLAGS='-arch x86_64'
 
 # Terminal prompt settings
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
@@ -23,3 +26,5 @@ eval `gdircolors $HOME/.dir_colors`
 # Customized items.
 alias dwibbles='ssh dwibbles.com'
 alias unified='ssh api.dwibbles.com'
+
+test -f ~/.bashrc && source ~/.bashrc
