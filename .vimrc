@@ -34,6 +34,8 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 map <Leader>n :NERDTreeToggle<CR>
 
+imap ii <Esc> 
+
 set relativenumber
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
