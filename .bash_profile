@@ -1,11 +1,14 @@
 
-# TODO Make these conditional. If the directories don't exist don't add to path, if they do, add them.
+# Prepended Paths
+PATH=/usr/local/Cellar/macvim/7.3-65/bin:$PATH # Needs to be before /usr/bin. For vim binaries.
+
+# Appended Paths
+PATH=$PATH\:/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
 PATH=$PATH\:$HOME/opt/mongodb-osx-x86_64-2.2.0/bin
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/platform-tools
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/tools
 PATH=$PATH\:$HOME/bin
 PATH=$PATH\:$HOME/Library/Trigger\ Toolkit
-PATH=$PATH\:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # XXX Not sure what this is used for
 CLICOLOR=1
