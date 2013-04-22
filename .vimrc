@@ -26,6 +26,7 @@ set incsearch
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd Filetype jade setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd Filetype python setlocal tabstop=8 shiftwidth=4 softtabstop=4 textwidth=80 expandtab nowrap
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
