@@ -24,10 +24,10 @@ endif
 
 set incsearch
 
-autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd Filetype jade setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd Filetype python setlocal tabstop=8 shiftwidth=4 softtabstop=4 textwidth=80 expandtab nowrap
+filetype plugin on
+set tabstop=2
+set shiftwidth=2
+set noexpandtab
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -45,6 +45,8 @@ set smartindent
 
 set foldmethod=syntax
 let javaScript_fold=1
+
+let g:SimpylFold_docstring_preview = 1
 
 syntax enable
 set background=dark
