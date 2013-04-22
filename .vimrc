@@ -11,7 +11,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'msanders/snipmate'
+Bundle 'msanders/snipmate.vim'
 Bundle 'AutoClose'
 Bundle 'git://git.wincent.com/command-t.git'
 
