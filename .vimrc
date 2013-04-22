@@ -12,6 +12,7 @@ Bundle 'Lokaltog/powerline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'msanders/snipmate.vim'
+Bundle 'tmhedberg/SimpylFold'
 Bundle 'AutoClose'
 Bundle 'git://git.wincent.com/command-t.git'
 
