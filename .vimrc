@@ -8,13 +8,18 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/powerline'
 Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'msanders/snipmate.vim'
 Bundle 'tmhedberg/SimpylFold'
-Bundle 'AutoClose'
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Townk/vim-autoclose'
+Bundle 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'andviro/flake8-vim'
+
+let g:PyFlakeOnWrite = 1
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
@@ -22,20 +27,19 @@ if has('gui_running')
 	set guifont=Ubuntu\ Mono\ for\ Powerline:h16
 endif
 
+set wildignore+=node_modules,*.rdb
 set incsearch
 
 filetype plugin on
-set tabstop=2
-set shiftwidth=2
-set noexpandtab
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 map <Leader>n :NERDTreeToggle<CR>
+map <Leader>a :Ack 
 
-imap ii <Esc> 
+imap jj <Esc> 
 
 set relativenumber
 autocmd InsertEnter * :set number
@@ -51,5 +55,12 @@ let g:SimpylFold_docstring_preview = 1
 syntax enable
 set background=dark
 colorscheme solarized
+let g:solarized_termcolors=256
+let g:airline_powerline_fonts = 1
 
 let NERDTreeShowHidden=1
+
+let g:ctrlp_custom_ignore = {
+	\ 'dir': '\v[\/]\.?(git|hg|svn|venv|dist)$',
+	\ 'file': '\v\.(pyc|so|gif|jpg|png)$',
+	\ }

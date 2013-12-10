@@ -1,9 +1,9 @@
 
 # Prepended Paths
-PATH=/usr/local/Cellar/macvim/7.3-65/bin:$PATH # Needs to be before /usr/bin. For vim binaries.
+PATH=:/usr/local/bin:/usr/local/Cellar/macvim/7.3.923/bin:$PATH # Needs to be before /usr/bin. For vim binaries.
 
 # Appended Paths
-PATH=$PATH\:/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+PATH=$PATH\:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
 PATH=$PATH\:$HOME/opt/mongodb-osx-x86_64-2.2.0/bin
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/platform-tools
 PATH=$PATH\:$HOME/opt/android-sdk-macosx/tools

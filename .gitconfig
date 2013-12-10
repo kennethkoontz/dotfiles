@@ -4,6 +4,7 @@
 [core]
 	autocrlf = input
 	safecrlf = true
+	editor = /usr/local/bin/vim
 [alias]
 	co = checkout
 	ci = commit
@@ -17,6 +18,7 @@
 	branch = auto
 	diff = auto
 	status = auto
+	ui = true
 [color "branch"]
 	current = yellow reverse
 	local = yellow 
@@ -32,3 +34,7 @@
 	untracked = cyan
 [credential]
 	helper = osxkeychain
+[merge]
+	tool = gvimdiff
+[push]
+	default = matching
