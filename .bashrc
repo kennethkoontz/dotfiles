@@ -106,7 +106,7 @@ PATH=$PATH:$HOME/opt/android-sdk-linux/platform-tools
 
 
 # Allow terminal with 256 color support.
-export TERM="xterm-256color"
+export TERM=xterm-256color
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
