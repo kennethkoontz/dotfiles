@@ -21,6 +21,7 @@ Bundle 'andviro/flake8-vim'
 Bundle 'ludovicchabant/vim-lawrencium'
 Bundle 'majutsushi/tagbar'
 Bundle 'marijnh/tern_for_vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 if has("gui_running")
 	set guifont=Ubuntu\ Mono\ 12
@@ -36,10 +37,6 @@ set incsearch
 
 filetype plugin on
 
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>a :Ack 
 
