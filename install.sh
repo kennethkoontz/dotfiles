@@ -15,3 +15,7 @@ fi
 if ln -sf $PWD/.bashrc $HOME/.bashrc; then
 	echo created symlink: $PWD/.bashrc $HOME/.bashrc
 fi
+
+if ln -sf $PWD/.tmux.conf $HOME/.tmux.conf; then
+	echo created symlink: $PWD/.tmux.conf $HOME/.tmux.conf
+fi
