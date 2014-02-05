@@ -104,7 +104,6 @@ fi
 
 PATH=$PATH:$HOME/opt/android-sdk-linux/platform-tools
 
-
 # Allow terminal with 256 color support.
 export TERM=xterm-256color
 
