@@ -42,8 +42,9 @@ ZSH_THEME="robbyrussell"
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
 
+export CLICOLOR=1
 # Allow terminal with 256 color support.
-export TERM=xterm-256color
+export TERM=screen-256color
 
 # preferred editor
 export EDITOR='vim'
@@ -62,13 +63,15 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/kenneth/opt/android-sdk-linux/platform-tools:/home/kenneth/.rvm/bin:/home/kenneth/opt/android-sdk-linux/platform-tools:/home/kenneth/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# GNU coreutils for osx
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # ls colors
-eval `dircolors /home/kenneth/repos/dircolors-solarized/dircolors.256dark`
+eval `dircolors $HOME/opt/dircolors-solarized/dircolors.ansi-dark`
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-

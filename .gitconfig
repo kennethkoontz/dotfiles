@@ -1,10 +1,11 @@
 [user]
-	name = kenneth koontz
+	name = ken koontz
 	email = kenneth.koontz@gmail.com
 [core]
 	autocrlf = input
 	safecrlf = true
 	editor = /usr/local/bin/vim
+	excludesfile = /Users/kenneth/.gitignore_global
 [alias]
 	co = checkout
 	ci = commit
@@ -38,3 +39,9 @@
 	tool = gvimdiff
 [push]
 	default = matching
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

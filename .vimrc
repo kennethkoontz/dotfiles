@@ -1,8 +1,8 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
@@ -23,6 +23,7 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'davidhalter/jedi-vim'
 
+call vundle#end()
 " vundle requires ft off when loading, turn back on when finished
 filetype plugin indent on
 
@@ -74,3 +75,7 @@ let g:ctrlp_custom_ignore = {
 	\ 'dir': '\v[\/]\.?(git|hg|svn|venv|dist)$',
 	\ 'file': '\v\.(pyc|so|gif|jpg|png)$',
 	\ }
+
+" for some reason in mac osx delete button wasn't working properly - this
+" fixes it
+:set backspace=indent,eol,start
