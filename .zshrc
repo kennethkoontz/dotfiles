@@ -49,6 +49,13 @@ export TERM=screen-256color
 # preferred editor
 export EDITOR='vim'
 
+# GNU coreutils for osx
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+# ls colors
+eval `dircolors $HOME/opt/dircolors-solarized/dircolors.ansi-dark`
+
 # plugin options
 ZSH_TMUX_AUTOSTART=true
 
@@ -59,16 +66,7 @@ plugins=(git node pip mercurial python tmux npm zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/kenneth/opt/android-sdk-linux/platform-tools:/home/kenneth/.rvm/bin:/home/kenneth/opt/android-sdk-linux/platform-tools:/home/kenneth/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# GNU coreutils for osx
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
-# ls colors
-eval `dircolors $HOME/opt/dircolors-solarized/dircolors.ansi-dark`
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

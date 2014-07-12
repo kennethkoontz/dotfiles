@@ -68,7 +68,7 @@ autocmd Syntax javascript setlocal foldmethod=syntax
 autocmd Syntax python,javascript normal zR
 
 " powerline settings
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 " ctrl p settings
 let g:ctrlp_custom_ignore = {
