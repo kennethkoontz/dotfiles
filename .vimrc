@@ -9,6 +9,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
 Bundle 'bling/vim-airline'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'Lokaltog/vim-easymotion'
@@ -47,6 +48,7 @@ let NERDTreeShowHidden=1
 
 " make styles files look like html
 autocmd BufNewFile,BufRead *.styles,*.style set filetype=html
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " custom mappings
 let mapleader=","

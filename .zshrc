@@ -62,7 +62,7 @@ ZSH_TMUX_AUTOSTART=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git node pip mercurial python tmux npm zsh-syntax-highlighting)
+plugins=(osx git node pip mercurial python tmux npm zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,3 +73,5 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
