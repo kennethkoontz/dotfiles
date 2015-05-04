@@ -36,7 +36,7 @@
 [credential]
 	helper = osxkeychain
 [merge]
-	tool = gvimdiff
+	tool = vimdiff
 [push]
 	default = matching
 [difftool "sourcetree"]
@@ -45,3 +45,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/PyCharm.app/Contents/MacOS/pycharm merge $LOCAL $REMOTE $BASE $MERGED
 	trustExitCode = true
+[diff]
+	tool = vimdiff

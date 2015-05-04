@@ -62,7 +62,16 @@ ZSH_TMUX_AUTOSTART=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx git node pip mercurial python tmux npm zsh-syntax-highlighting)
+plugins=(osx git node pip mercurial python tmux npm zsh-syntax-highlighting hub)
+export PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export NVM_DIR="/Users/kenneth/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/kenneth/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,4 +83,16 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/kenneth/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/kenneth/google-cloud-sdk/completion.zsh.inc'
+
+# Per directory ack settings
+export ACKRC=".ackrc"
+
+alias git=hub
